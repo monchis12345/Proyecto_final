@@ -1,2 +1,17 @@
+instrucciones para correr el programa/pagina web.
+1. abrir el terminal del VCS
+2. entrar en la carperta sistema/sistema 
+3. escrbir en la terminal del VCS: python3 manage.py runserver
+4. copiar y pegar el link que te porta la termial en tu navegador(Starting development server at http://127.0.0.1:8000/)
+5.para entrar en la administracion de datos /ADMIN escribes el link con el /admin: http://127.0.0.1:8000/admin
+5.1. entras con el usuario y contraseñadadas.
+6. discfruta de agregar y eliminar datos en la pagina PD: es mi primera pagina de este proyecto
+pronto lo hare mejor.
+
+
+
+
+
+
 Usuarios
 libro/ 12345libro
