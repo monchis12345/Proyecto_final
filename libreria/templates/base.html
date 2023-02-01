@@ -19,16 +19,16 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" style='color:#fff;' href="#">Inicio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style='color:#F0F3F4;' data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"  ></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" style='color:#F0F3F4;' id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" style='color:#fff;' aria-current="page" href="{% url 'inicio' %}">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style='color:#fff;' aria-current="page" href="{% url 'fotos' %}">fotos</a>
+            <a class="nav-link active" style='color:#fff;' aria-current="page" href="{% url 'fotos' %}">fotos de prueba</a>
           </li>
           <li class="nav-item">
             <a class="nav-link"  style='color:#fff;'href="{% url 'links' %}">links de apoyo</a>
@@ -49,8 +49,7 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+
         </form>
       </div>
     </div>
