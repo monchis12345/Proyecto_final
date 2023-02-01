@@ -4,17 +4,34 @@
 
 {%  block contenido %} 
 
-<div class="card">
-    <div class="card-header">
-        Editar 
-    </div>
-    <div class="card-body">
-        <h4 class="card-title">Datos del personaje</h4>
-        {% include 'libros/form.html' %}
-    </div>
-    <div class="card-footer text-muted">
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Gif the fondo.</title> 
+        <style> 
+            body { 
+                background-image: url("https://www.art-consciousness.com/image0420/f8/f8024fa31e9f56416e914d13e7bb87da.gif"); 
+                background-position: center 25%; 
+                background-size: cover; 
+            } 
+        </style>
         
-    </div>
-</div>
+    </head> 
+    <body>
 
+        <div class="card">
+            <div class="card-header">
+                Editar tus fotos
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Datos de tus fotos</h4>
+                {% include 'libros/form.html' %}
+            </div>
+            <div class="card-footer text-muted">
+                
+            </div>
+        </div>
+        
+    </body> 
+</html> 
 {%  endblock contenido %}

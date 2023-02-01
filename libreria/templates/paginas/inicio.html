@@ -4,14 +4,57 @@
 
 {%  block contenido %} 
 
-<div class="p-5 mb-4 bg-light rounded-3">
-    <div class="container-fluid py-5">
-      <h1 class="display-5 fw-bold">Bienvenidos</h1>
-      <p class="col-md-8 fs-4">Libreria de Destiny 2</p>
-      <hr class="my=2">
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Gif the fondo.</title> 
+        <style> 
+            body { 
+                background-image: url("https://wallpaperaccess.com/full/5927911.gif"); 
+                background-position: center 25%; 
+                background-size: cover; 
+            } 
+        </style>
+        
+    </head> 
+    <body>
+      
+      <div class="p-10 mb-10  rounded-4">
+        <div class="container-fluid py-5">
+          <h1 class="display-1 fw-bold" style='color:#F1948A;'>Bienvenidos a la Galeria WEB</h1>
+          <p class="col-md-4 fs-4" style='color:#F1948A;'>
+            Aqui podras subir tus fotos  favoritos.
+          </p>
+          <hr class="my=2">
+    
+          <p class="lead">
+            <a class="btn btn-success" href="{% url 'libros' %}" role="button">Empezar</a>
+    
+            </p>
+            
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://www.xtrafondos.com/wallpapers/resoluciones/20/colores-mezclados-en-ondas_2560x1440_5844.jpg " class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://fotografias.lasexta.com/clipping/cmsimages01/2020/05/08/E3BC9A26-F5D7-4B1D-9497-72A52CE9CB79/98.jpg?crop=1300,731,x0,y19&width=1900&height=1069&optimize=high&format=webply" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://fondosmil.com/fondo/69478.jpg" class="d-block w-100" alt="">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
 
-      <p class="lead">
-        <a class="btn btn-success" href="{% url 'libros' %}" role="button">Empezar</a>
-    </div>
-  </div>
+    </body> 
+</html> 
+
 {%  endblock  %}

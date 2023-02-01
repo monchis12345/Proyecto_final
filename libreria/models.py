@@ -1,5 +1,6 @@
 from django.db import models
-
+from django.contrib.auth.models import User
+from datetime import date
 class Libro(models.Model):
     id = models.AutoField(primary_key=True)
     titulo = models.CharField(max_length=100, verbose_name='Titulo')
@@ -13,8 +14,7 @@ class Libro(models.Model):
         self.imagen.storage.delete(self.imagen.name)
         super().delete()
 
-
-    
+borrower = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
     
 
 
